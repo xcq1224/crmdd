@@ -1,0 +1,298 @@
+@baseColor: #16A4FA;
+html, body, #app, .wrap, .content{
+    height: 100%;
+    font-size: 14px;
+    color: #777;
+}
+body {
+    overflow:auto;   /* 用于 android4+，或其他设备 */
+    -webkit-overflow-scrolling:touch;    /* 用于 ios5+ */  
+}
+.content{
+    overflow: auto;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+}
+textarea{
+    font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+
+
+.hv100{
+    height: 100%;
+}
+.page{
+    height: 100%;
+    position: relative;
+}
+.has-tabbar{
+    padding-bottom: 55px;
+    height: 100%;
+    box-sizing: border-box;
+}
+.text-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.w270{
+    width: 270px;
+}
+.w320{
+    width: 320px;
+}
+.w_100{
+    width: 100%;
+}
+.font12{
+    font-size: 12px;
+}
+.font14{
+    font-size: 14px !important;
+}
+.text_333{
+    color: #333;
+}
+.text_777{
+    color: #777;
+}
+.text_999{
+    color: #999;
+}
+.text_ccc{
+    color: #ccc;
+}
+.text_base{
+    color: @baseColor;
+}
+.inline_block{
+    display: inline-block;
+}
+.float_l{
+    float: left;
+}
+.float_r{
+    float: right;
+}
+
+.main{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;  
+    overflow: auto;
+}
+//  crm操作菜单
+.operating-box{
+    position: relative;
+    z-index: 2;
+    height: 45px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    .operating-flex {
+        display: flex;
+        font-size: 14px;
+        color: #ccc;
+        padding: 10px 0;
+        margin-top: 0;
+        .filter {
+            flex: 3;
+            text-align: center;
+        }
+        .icon{
+            flex: 2;
+            text-align: center;
+            line-height: 20px;
+            i{
+                font-size: 20px;
+                position: relative;
+                top: 3px;
+            }
+        }
+        >div:first-of-type {
+            padding-left: 10px;
+            width: 160px;
+            color: #777;
+        }
+    } 
+}
+//  CRM菜单列表样式
+.list-item{
+    display: block;
+    border-bottom: 1px solid #ddd;
+    color: #ccc;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 24px;
+    p{
+        height: 24px;
+    }
+    .icon_handle{
+        position: relative;
+        top: 10px;
+        font-size: 20px;
+        float: right;
+        color: #ccc;
+    }
+}
+//  crm详情页面轮播图样式
+.page .crm_detial_header{
+    position: relative;
+    z-index: 2;
+    height: 110px;
+    background: @baseColor;
+    color: #fff;
+    .dots a i.vux-icon-dot{
+        background-color: #fff;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .item1{
+        padding-top: 20px;
+        font-size: 12px;
+        p{
+            padding-left: 10px;
+        }
+        .title{
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+    }
+    .item2{
+        padding-top: 20px;
+        p{
+            padding-left: 10px;
+        }
+        .user-list{
+            padding: 0 10px;
+            margin-top: 6px;
+            width: auto;
+            height: auto;
+            span{
+                position: relative;
+                top: -6px;
+            }
+            .admin{
+                position: relative;
+                i{
+                    position: absolute;
+                    top: 15px;
+                    right: 5px;
+                    display: block;
+                    color: #f00;
+                    font-size: 14px;
+                    background: #fff;
+                    height: 12px;
+                    width: 12px;
+                    border-radius: 50%;
+                    &:before{
+                        position: relative;
+                        top: -5px;
+                        left: -1px;
+                    }
+                }
+            }
+            img{
+                width: 34px;
+                height: 34px;
+                border-radius: 50%;
+                margin-right: 4px;
+                vertical-align: middle;
+                &:after{
+                    content: '\e602';
+                    display: block;
+                }
+            }
+            font{
+                font-size: 34px;
+                border-radius: 50%;
+                margin-right: 4px;
+                vertical-align: middle;
+            }
+            i{
+                float: right;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+
+.popup-picker:before{
+    display: none;
+}
+
+// 元素层级显示
+.pst{
+    position: relative;
+    z-index: 2
+}
+
+//  标签
+.tag-box{
+    padding: 10px 0.4rem;
+    border-top: 1px solid #eee;
+    .el-tag{
+        display: inline-block;
+        background-color: rgba(64,158,255,.1);
+        padding: 0 10px;
+        height: 32px;
+        line-height: 30px;
+        font-size: 12px;
+        color: #409EFF;
+        border-radius: 4px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: 1px solid rgba(64,158,255,.2);
+        white-space: nowrap;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        i{
+            font-size: 14px;
+        }
+    }
+    .el-tag-input{
+        display: inline-block;
+        width: 66px;
+        height: 16px;
+        padding-top: 5px;
+        border-radius: 6px;
+        vertical-align: middle;
+        border: 1px solid #ddd;
+    }
+    p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+//  搜索结果
+.weui-cells.vux-search_show .weui-cell:last-child{
+    margin-bottom: 0 !important;
+}
+.vux-table.custom-table{
+    margin-bottom: 20px;
+    td{
+        text-align: center;
+        line-height: 16px;
+        padding: 6px 0;
+        vertical-align: initial;
+        &:after{
+            border-right-width: 1px !important;
+        }
+        &:before{
+            border-bottom-width: 1px !important;
+        }
+    }
+}
+input::-webkit-input-placeholder{
+    color: #ccc;
+}
+textarea::-webkit-input-placeholder{
+    color: #ccc;
+}

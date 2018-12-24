@@ -1,0 +1,289 @@
+html,
+body,
+#app,
+.wrap,
+.content {
+  height: 100%;
+  font-size: 14px;
+  color: #777;
+}
+body {
+  overflow: auto;
+  /* 用于 android4+，或其他设备 */
+  -webkit-overflow-scrolling: touch;
+  /* 用于 ios5+ */
+}
+.content {
+  overflow: auto;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+}
+textarea {
+  font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+.hv100 {
+  height: 100%;
+}
+.page {
+  height: 100%;
+  position: relative;
+}
+.has-tabbar {
+  padding-bottom: 55px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.w270 {
+  width: 270px;
+}
+.w320 {
+  width: 320px;
+}
+.w_100 {
+  width: 100%;
+}
+.font12 {
+  font-size: 12px;
+}
+.font14 {
+  font-size: 14px !important;
+}
+.text_333 {
+  color: #333;
+}
+.text_777 {
+  color: #777;
+}
+.text_999 {
+  color: #999;
+}
+.text_ccc {
+  color: #ccc;
+}
+.text_base {
+  color: #16A4FA;
+}
+.inline_block {
+  display: inline-block;
+}
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+.main {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.operating-box {
+  position: relative;
+  z-index: 2;
+  height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.operating-box .operating-flex {
+  display: flex;
+  font-size: 14px;
+  color: #ccc;
+  padding: 10px 0;
+  margin-top: 0;
+}
+.operating-box .operating-flex .filter {
+  flex: 3;
+  text-align: center;
+}
+.operating-box .operating-flex .icon {
+  flex: 2;
+  text-align: center;
+  line-height: 20px;
+}
+.operating-box .operating-flex .icon i {
+  font-size: 20px;
+  position: relative;
+  top: 3px;
+}
+.operating-box .operating-flex > div:first-of-type {
+  padding-left: 10px;
+  width: 160px;
+  color: #777;
+}
+.list-item {
+  display: block;
+  border-bottom: 1px solid #ddd;
+  color: #ccc;
+  padding: 4px 10px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.list-item p {
+  height: 24px;
+}
+.list-item .icon_handle {
+  position: relative;
+  top: 10px;
+  font-size: 20px;
+  float: right;
+  color: #ccc;
+}
+.page .crm_detial_header {
+  position: relative;
+  z-index: 2;
+  height: 110px;
+  background: #16A4FA;
+  color: #fff;
+}
+.page .crm_detial_header .dots a i.vux-icon-dot {
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+.page .crm_detial_header .item1 {
+  padding-top: 20px;
+  font-size: 12px;
+}
+.page .crm_detial_header .item1 p {
+  padding-left: 10px;
+}
+.page .crm_detial_header .item1 .title {
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+.page .crm_detial_header .item2 {
+  padding-top: 20px;
+}
+.page .crm_detial_header .item2 p {
+  padding-left: 10px;
+}
+.page .crm_detial_header .item2 .user-list {
+  padding: 0 10px;
+  margin-top: 6px;
+  width: auto;
+  height: auto;
+}
+.page .crm_detial_header .item2 .user-list span {
+  position: relative;
+  top: -6px;
+}
+.page .crm_detial_header .item2 .user-list .admin {
+  position: relative;
+}
+.page .crm_detial_header .item2 .user-list .admin i {
+  position: absolute;
+  top: 15px;
+  right: 5px;
+  display: block;
+  color: #f00;
+  font-size: 14px;
+  background: #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.page .crm_detial_header .item2 .user-list .admin i:before {
+  position: relative;
+  top: -5px;
+  left: -1px;
+}
+.page .crm_detial_header .item2 .user-list img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.page .crm_detial_header .item2 .user-list img:after {
+  content: '\e602';
+  display: block;
+}
+.page .crm_detial_header .item2 .user-list font {
+  font-size: 34px;
+  border-radius: 50%;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.page .crm_detial_header .item2 .user-list i {
+  float: right;
+  font-size: 24px;
+}
+.popup-picker:before {
+  display: none;
+}
+.pst {
+  position: relative;
+  z-index: 2;
+}
+.tag-box {
+  padding: 10px 0.4rem;
+  border-top: 1px solid #eee;
+}
+.tag-box .el-tag {
+  display: inline-block;
+  background-color: rgba(64, 158, 255, 0.1);
+  padding: 0 10px;
+  height: 32px;
+  line-height: 30px;
+  font-size: 12px;
+  color: #409EFF;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid rgba(64, 158, 255, 0.2);
+  white-space: nowrap;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.tag-box .el-tag i {
+  font-size: 14px;
+}
+.tag-box .el-tag-input {
+  display: inline-block;
+  width: 66px;
+  height: 16px;
+  padding-top: 5px;
+  border-radius: 6px;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+}
+.tag-box p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.weui-cells.vux-search_show .weui-cell:last-child {
+  margin-bottom: 0 !important;
+}
+.vux-table.custom-table {
+  margin-bottom: 20px;
+}
+.vux-table.custom-table td {
+  text-align: center;
+  line-height: 16px;
+  padding: 6px 0;
+  vertical-align: initial;
+}
+.vux-table.custom-table td:after {
+  border-right-width: 1px !important;
+}
+.vux-table.custom-table td:before {
+  border-bottom-width: 1px !important;
+}
+input::-webkit-input-placeholder {
+  color: #ccc;
+}
+textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
