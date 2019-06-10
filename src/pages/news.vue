@@ -122,7 +122,14 @@
             },
             getApproval(){
                 this.$vux.loading.show()
-                this.$post("/crm/dingDingPR/getAllFlowList", {flowType: '1'}, (data) => {
+                let params = {
+                    pageSize: 100,
+                    currentPage: 1,
+                    prop: 'createTime',
+                    order: -1,
+                    flowType: '1'
+                }
+                this.$post("/crm/dingDingPR/getAllFlowList", params, (data) => {
                     let list = data.tp_list || []
                     this.approvalNum = list.length
                 })
